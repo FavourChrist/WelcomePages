@@ -1,0 +1,254 @@
+@charset "UTF-8";
+/*----------------------------------------------------- CSS DOCUMENT --------------------------------------------------------------*/
+/*   ---- LEGAL ---- 
+
+PROJECT: Zoho webPage
+CLIENT: Zoho int.
+DEVELOPER: Favour
+COMPANY: Zoho
+WEBSITE: Zoho
+CONTACT: www.maxsio.com.ng
+
+*/
+
+/*   ---- COLOR PALETTE ---
+    
+     #363636         GRAY
+     #00dcb0         GREEN  
+     #973bb7         PURPLE 
+     #5ec64d         DARK GREEN 
+     #27aae2         BLUE
+     #fec224         YELLOW
+     #eb48c5         PINK
+     #bc68fc         LIGHT PURPLE
+     #ff5555         RED
+
+*/
+
+
+        /* ------  Fonts ------ */
+@font-face {
+	font-family: 'Cantarell';
+	src: url('../_fonts/Cantarell-Regular-webfont.eot');
+	src: url('../_fonts/Cantarell-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('../_fonts/Cantarell-Regular-webfont.woff') format('woff'), url('../_fonts/Cantarell-Regular-webfont.ttf') format('truetype'), url('../_fonts/Cantarell-Regular-webfont.svg#webfont9UOzsjXz') format('svg');
+	font-weight: normal;
+	font-style:normal;
+}
+
+@font-face {
+	font-family: 'Cantarell';
+	src: url('../_fonts/Cantarell-Oblique-webfont.eot');
+	src: url('../_fonts/Cantarell-Oblique-webfont.eot?#iefix') format('embedded-opentype'), url('../_fonts/Cantarell-Oblique-webfont.woff') format('woff'), url('../_fonts/Cantarell-Oblique-webfont.ttf') format('truetype'), url('../_fonts/Cantarell-Oblique-webfont.svg#webfontRl4nowrT') format('svg');
+	font-weight: normal;
+	font-style:italic;
+}
+
+@font-face {
+	font-family: 'Cantarell';
+	src: url('../_fonts/Cantarell-Bold-webfont.eot');
+	src: url('../_fonts/Cantarell-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('../_fonts/Cantarell-Bold-webfont.woff') format('woff'), url('../_fonts/Cantarell-Bold-webfont.ttf') format('truetype'), url('../_fonts/Cantarell-Bold-webfont.svg#webfontKr2CkGZp') format('svg');
+	font-weight: bold;
+	font-style:normal;
+}
+
+@font-face {
+	font-family: 'Cantarell';
+	src: url('../_fonts/Cantarell-BoldOblique-webfont.eot');
+	src: url('../_fonts/Cantarell-BoldOblique-webfont.eot?#iefix') format('embedded-opentype'), url('../_fonts/Cantarell-BoldOblique-webfont.woff') format('woff'), url('../_fonts/Cantarell-BoldOblique-webfont.ttf') format('truetype'), url('../_fonts/Cantarell-BoldOblique-webfont.svg#webfontQ1aSR0ux') format('svg');
+	font-weight: bold;
+	font-style:italic;
+}
+
+@font-face {
+	font-family: "Cardo";
+	src: url("../_fonts/Cardo99s-webfont.eot");
+	src: url("../_fonts/Cardo99s-webfont.eot?#iefix") format("embedded-opentype"), url("../_fonts/Cardo99s-webfont.woff") format("woff"), url("../_fonts/Cardo99s-webfont.ttf") format("truetype"), url("../_fonts/Cardo99s-webfont.svg#webfontQ5EXXZTZ") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'OstrichSansBold';
+	src: url('../_fonts/ostrich-bold-webfont.eot');
+	src: url('../_fonts/ostrich-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../_fonts/ostrich-bold-webfont.woff') format('woff'), url('../_fonts/ostrich-bold-webfont.ttf') format('truetype'), url('../_fonts/ostrich-bold-webfont.svg#OstrichSansBold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+                /* ------------------------------------------ Global Styles --------------------------------------------- */
+
+ /* Limited CSS Reset */
+html, body, div, section, article, aside, header, hgroup, footer, nav, h1, h2, h3, h4, h5, h6, p, blockquote, address, time, span, em, strong, img, ol, ul, li, figure, canvas, video, th, td, tr {
+		margin: 0;
+		padding: 0;
+        border: 0;
+        vertical-align:baseline;
+        font: inherit;
+}
+
+
+ /* HTML5 Display Rule */
+address, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav, menu, nav, section, summary {
+	   display: block;
+}
+header{
+	width: 100%;
+    box-shadow: 1px 1px 7px #00000032;
+	height: 50px;
+}
+header nav ul{
+	display: flex;
+	/* padding-top: 10px; */
+}
+/* header nav ul .first{
+	padding-left: 3rem;
+} */
+header nav ul .first li{
+	display: inline-block;
+	padding-left: 16px;
+}
+header nav ul .first li a{
+	text-decoration: none;
+	color: #000;
+	text-transform: capitalize;
+	/* padding-left: 5rem; */
+}
+header nav ul .second{
+	padding-left: 30rem;
+}
+header nav ul .second li,a{
+	display: inline-block;
+	padding-top: 1rem;
+}
+header nav ul .second a{
+	text-decoration: none;
+	color: rgb(248, 58, 58);
+}
+  ul .first li h2{
+	padding-left: 6.5rem;
+	/* padding-right: 5rem;  */
+	padding-bottom: 1.2rem;
+	/* width: 5%; */
+	padding-top: 1rem;
+	background-size: 10px;
+	background: url(../images/zone-sprite.png ) 0 0 no-repeat;
+	background-position: 0 0;
+}
+ul .first li a{
+	padding-top: .1rem;
+	padding-bottom: 1rem;
+}
+nav ul p{
+	padding-left: 1.8rem;
+	padding-right: .5rem; 
+	padding-bottom: .5rem;
+	padding-top: .2rem;
+	text-transform: capitalize;
+	font-size: 14px;
+	font-weight: bold;
+	background: url(../images/zone-sprite.png ) 20px -1px no-repeat;
+	background-position: -290px 0;
+
+}
+body div{
+	margin-top: 2rem;
+	margin-left: 5rem;
+	margin-bottom: 5rem;
+	display: flex;
+	justify-content: space-between;
+}
+body div h4{
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 18px;
+	background-image: url(../images/icon-crm_0.png)  0;
+	background-repeat: no-repeat; 
+	background-position: 0 0;
+}
+div ul li a{
+	text-decoration: none;
+	color: rgb(53, 50, 50);
+	text-transform: capitalize;
+	font-size: 18px;
+ }
+ div ul li{
+	 list-style: none;
+	 display: inline-block;
+	 margin-left: 1rem;
+	 padding-right: 3rem;
+ }
+ body .stay{
+	 width: 53%;
+	 margin-left: 4rem;
+ }
+ body .stay h1{
+	 font-size: 63px;
+	 font-weight: 1000;
+	 margin-bottom: 1.5rem;
+ }
+ body .stay p{
+	 line-height: 25px;
+	 font-size: 18px;
+ }
+ body .stay h6{
+	 margin-top: 40px;
+	 margin-left: 50px;
+	 font-size: 17px;
+	 font-weight: bold;
+	 text-transform: capitalize;
+	 color: rgb(39, 36, 36);
+	 /* padding-top: 20px; */
+ }
+
+ 
+ body .stay,section{
+     display: inline-block;
+ }
+ body section{
+	 float: right;
+	 width: 30%;
+	 height: 30rem;
+ }
+
+ section h5{
+	 font-size: 20.5px;
+	 text-transform: capitalize;
+	 font-weight: bold;
+	 color: rgb(36, 32, 32);
+ }
+ .box input[type = "text"],.box input[type = "password"],.box input[type = "email"]{
+	width: 80%;
+	height: 45px;
+	font-size: 14px;
+	padding-left: 6px;
+	margin-top: 16px;
+	border: 1px solid rgb(179, 169, 169);
+ }
+ body section p{
+	 margin: 15px;
+	 line-height: 20px;
+	 font-size: 14px;
+	 color: rgb(59, 56, 56);
+ }
+ body section span:nth-child(1){
+	 font-weight: bold;
+	 color: #000;
+ }
+ 
+ body section a{
+	 text-decoration: none;
+	 background-color: rgb(248, 58, 58);
+	 color: #fff; 
+	 padding: 10px 115px;
+	 text-align: center;
+	 margin-top: 20px;
+ }
+  body section .now{
+	 margin-bottom: 18px;
+	 margin-left: 18px;
+	 margin-right: 103px;
+	 
+ }
+ 
+

@@ -1,0 +1,240 @@
+@charset "UTF-8";
+/*----------------------------------------------------- CSS DOCUMENT --------------------------------------------------------------*/
+/*   ---- LEGAL ---- 
+
+PROJECT: Zoho inventory webPage
+CLIENT: Zoho int.
+DEVELOPER: Favour
+COMPANY: Zoho 
+WEBSITE: Zoho inventory
+CONTACT: www.maxsio.com.ng
+
+*/
+
+/*   ---- COLOR PALETTE ---
+    
+     #363636         GRAY
+     #00dcb0         GREEN  
+     #973bb7         PURPLE 
+     #5ec64d         DARK GREEN 
+     #27aae2         BLUE
+     #fec224         YELLOW
+     #eb48c5         PINK
+     #bc68fc         LIGHT PURPLE
+     #ff5555         RED
+
+*/
+
+
+        /* ------  Fonts ------ */
+@font-face {
+	font-family: 'Cantarell';
+	src: url('../_fonts/Cantarell-Regular-webfont.eot');
+	src: url('../_fonts/Cantarell-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('../_fonts/Cantarell-Regular-webfont.woff') format('woff'), url('../_fonts/Cantarell-Regular-webfont.ttf') format('truetype'), url('../_fonts/Cantarell-Regular-webfont.svg#webfont9UOzsjXz') format('svg');
+	font-weight: normal;
+	font-style:normal;
+}
+
+@font-face {
+	font-family: 'Cantarell';
+	src: url('../_fonts/Cantarell-Oblique-webfont.eot');
+	src: url('../_fonts/Cantarell-Oblique-webfont.eot?#iefix') format('embedded-opentype'), url('../_fonts/Cantarell-Oblique-webfont.woff') format('woff'), url('../_fonts/Cantarell-Oblique-webfont.ttf') format('truetype'), url('../_fonts/Cantarell-Oblique-webfont.svg#webfontRl4nowrT') format('svg');
+	font-weight: normal;
+	font-style:italic;
+}
+
+@font-face {
+	font-family: 'Cantarell';
+	src: url('../_fonts/Cantarell-Bold-webfont.eot');
+	src: url('../_fonts/Cantarell-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('../_fonts/Cantarell-Bold-webfont.woff') format('woff'), url('../_fonts/Cantarell-Bold-webfont.ttf') format('truetype'), url('../_fonts/Cantarell-Bold-webfont.svg#webfontKr2CkGZp') format('svg');
+	font-weight: bold;
+	font-style:normal;
+}
+
+@font-face {
+	font-family: 'Cantarell';
+	src: url('../_fonts/Cantarell-BoldOblique-webfont.eot');
+	src: url('../_fonts/Cantarell-BoldOblique-webfont.eot?#iefix') format('embedded-opentype'), url('../_fonts/Cantarell-BoldOblique-webfont.woff') format('woff'), url('../_fonts/Cantarell-BoldOblique-webfont.ttf') format('truetype'), url('../_fonts/Cantarell-BoldOblique-webfont.svg#webfontQ1aSR0ux') format('svg');
+	font-weight: bold;
+	font-style:italic;
+}
+
+@font-face {
+	font-family: "Cardo";
+	src: url("../_fonts/Cardo99s-webfont.eot");
+	src: url("../_fonts/Cardo99s-webfont.eot?#iefix") format("embedded-opentype"), url("../_fonts/Cardo99s-webfont.woff") format("woff"), url("../_fonts/Cardo99s-webfont.ttf") format("truetype"), url("../_fonts/Cardo99s-webfont.svg#webfontQ5EXXZTZ") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'OstrichSansBold';
+	src: url('../_fonts/ostrich-bold-webfont.eot');
+	src: url('../_fonts/ostrich-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../_fonts/ostrich-bold-webfont.woff') format('woff'), url('../_fonts/ostrich-bold-webfont.ttf') format('truetype'), url('../_fonts/ostrich-bold-webfont.svg#OstrichSansBold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+                /* ------------------------------------------ Global Styles --------------------------------------------- */
+
+ /* Limited CSS Reset */
+html, body, div, section, article, aside, header, hgroup, footer, nav, h1, h2, h3, h4, h5, h6, p, blockquote, address, time, span, em, strong, img, ol, ul, li, figure, canvas, video, th, td, tr {
+		margin: 0;
+		padding: 0;
+        border: 0;
+        vertical-align:baseline;
+        font: inherit;
+}
+
+
+ /* HTML5 Display Rule */
+address, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav, menu, nav, section, summary {
+       display: block;
+}
+body{
+    background-color: rgb(250, 223, 227);
+}
+header{
+	width: 100%;
+    background-color: rgb(255, 255, 255);
+	height: 50px;
+}
+header nav ul {
+    display: flex;
+    margin-bottom: 2rem;
+}
+nav ul .first li{
+    display: inline-block;
+    padding-left: 16px;
+}
+header nav ul .first li a{
+	text-decoration: none;
+	color: #000;
+    text-transform: capitalize;
+}
+ul .first li h3{
+	padding-left: 6.5rem;
+	/* padding-right: 5rem;  */
+	padding-bottom: 1.2rem;
+	/* width: 5%; */
+	padding-top: 1rem;
+	background-size: 10px;
+	background: url(../images/zone-sprite.png ) 0 0 no-repeat;
+	background-position: 0 0;
+}
+ul .first li a{
+	padding-top: .1rem;
+	padding-bottom: .8rem;
+	text-transform: capitalize;
+}
+header nav ul .second{
+	padding-left: 29rem;
+	/* padding-top: .5rem; */
+}
+header nav ul .second li,a{
+	display: inline-block;
+	/* padding-top: 1rem; */
+
+}
+header nav ul .second a{
+	text-decoration: none;
+} 
+ul .second li a{
+	color: rgb(248, 58, 58);
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: bold;
+}
+ ul .second li span a{
+   background-color: rgb(248, 58, 58);
+   color: #fff;
+   text-align: center;
+   padding-top: 20px;
+   padding-bottom: 14px;
+   padding-left: 22px;
+   padding-right: 22px;
+   text-transform: uppercase;
+   font-size: 13px;
+   font-weight: bold;
+}
+nav ul p{
+	padding-left: 1.8rem;
+	padding-right: .5rem; 
+	padding-bottom: .5rem;
+	padding-top: .2rem;
+	text-transform: capitalize;
+	font-size: 14px;
+	font-weight: bold;
+	background: url(../images/zone-sprite.png ) 20px -1px no-repeat;
+	background-position: -290px 0;
+
+}
+body section{
+	margin-top: 2rem;
+	margin-left: 5rem;
+	margin-bottom: 5rem;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid rgb(245, 242, 242);
+	padding-bottom: 1rem;
+}
+body section h2{
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 18px;
+	background-image: url("../images/inventory-icon-default.svg") no-repeat;
+}
+section ul li a{
+	text-decoration: none;
+	color: rgb(53, 50, 50);
+	text-transform: capitalize;
+	font-size: 18px;
+ }
+ section ul li{
+	 list-style: none;
+	 display: inline-block;
+	 margin-left: 1rem;
+	 padding-right: 3rem;
+ }
+
+ body article{
+	 text-align:center;
+ }
+ article p:first-child{
+	 font-size: 35px;
+	 font-weight: lighter;
+	 color: rgb(32, 30, 30);
+ }
+ article span{
+	 font-weight: bolder;
+	 font-size: 40px;
+	 color: rgb(248, 58, 58);
+ }
+ body article h1{
+	 font-size: 55px;
+	 font-weight: bold;
+	 padding-bottom: 1rem;
+ }
+ 
+ body article p{
+	 /* line-height: 25px; */
+	 font-size: 20px;
+ }
+ body article p:nth-last-child(2){
+	padding-bottom: 2rem;
+ }
+ body article a{
+	 border: 1px solid rgb(49, 47, 47);
+	 padding: 14px 40px;
+	 color: rgb(32, 27, 27);
+	 text-transform: uppercase;
+	 font-weight: bold;
+	 text-decoration: none;
+	 font-size: 18px;
+ }
+ body article a:first-child{
+	 background-color: rgb(248, 58, 58);
+	 color: #fff;
+	 border: none;
+ }
